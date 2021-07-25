@@ -3,6 +3,13 @@ body {
     margin: 0;
     display: grid;
     grid-template-columns: 300px 1fr;
+    font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Lucida Grande',Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+    line-height: 21px;
+    letter-spacing: -0.4px;
+    color: rgba(48, 48, 48, 0.96);
+}
+p {
+    margin: 0;
 }
 header {
     padding: 10px 16px;
@@ -27,4 +34,34 @@ header > svg:nth-child(3) {
 }
 header > svg:nth-child(4) {
     grid-area: fourth;
+}
+#notify {
+    height: 62px;
+    padding: 13px 12px 14px 13px;
+    background: #9de1fe;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content;
+    grid-template-areas:
+    "icon tex"
+    "icon text";
+    align-content: center;
+}
+#notify svg {
+    margin-right: 15px;
+    color: hsla(0, 0%, 100%, 0.9);
+    grid-area: icon;
+}
+#notify > p:first-child {
+    grid-area: tex;
+}
+#notify > p:last-child {
+    grid-area: text;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+}
+.material-icons {
+    font-size: 18px !important;
 }
