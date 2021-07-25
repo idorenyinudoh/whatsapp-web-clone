@@ -1,0 +1,30 @@
+body {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+header {
+    padding: 10px 16px;
+    background: #ededed;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px 10px 40px 10px 40px;
+    grid-template-rows: max-content;
+    grid-template-areas: "first . second . third . fourth";
+    place-items: center;
+}
+svg {
+    color: #919191;
+}
+header > svg:first-child {
+    grid-area: first;
+}
+header > svg:nth-child(2) {
+    grid-area: second;
+}
+header > svg:nth-child(3) {
+    grid-area: third;
+}
+header > svg:nth-child(4) {
+    grid-area: fourth;
+}
