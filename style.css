@@ -25,7 +25,6 @@ body {
     color: rgba(48, 48, 48, 0.96);
 }
 #side {
-    position: relative;
     height: 100vh;
 }
 p {
@@ -109,12 +108,6 @@ header > svg:nth-child(4) {
     margin: 7px auto 7px 65px;
     color: #919191;
 }
-#conversations {
-    position: absolute;
-    top: 198px;
-    bottom: 0;
-    overflow-y: scroll;
-}
 #conversation {
     width: 100%;
     display: grid;
@@ -175,4 +168,54 @@ header > svg:nth-child(4) {
 }
 .read #yarns {
     grid-column: 1 / 3;
+}
+#chat {
+    position: relative;
+    min-width: 277.59px;
+    height: calc(100vh - 56px);
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 28px 15vw;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
+#chat::after {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    content: "";
+    background: #4adf83;
+}
+#image {
+    width: 250px;
+    height: 250px;
+    background-image: url('whatsapp-image.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 50%;
+}
+h1 {
+    margin-top: 28px;
+    font-size: 32px;
+    font-weight: 300;
+    color: #525252;
+}
+#chat p {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.45);
+}
+hr {
+    margin: 34px 0;
+    border: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+a {
+    color: #0aa545;
+    text-decoration: none;
 }
