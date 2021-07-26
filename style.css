@@ -89,3 +89,59 @@ header > svg:nth-child(4) {
     margin: 7px auto 7px 65px;
     color: #919191;
 }
+#conversations {
+    /* position: fixed; */
+}
+#conversation {
+    width: 100%;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: 72px;
+    align-items: center;
+}
+#conversation > svg {
+    margin: 0 15px 0 13px;
+}
+#conversation > #text {
+    margin-right: 15px;
+    padding: 14.3045px 0;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: repeat(2, max-content);
+}
+#conversation:not(:first-child) > #text {
+    border-top: 1px solid #f2f2f2;
+}
+#name {
+    font-size: 17px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#time {
+    width: max-content;
+    margin: 3px 0 0 6px;
+    font-size: 12px;
+    line-height: 14px;
+}
+#yarns {
+    font-size: 14px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#unread {
+    width: 20.391px;
+    height: 20.391px;
+    background: #06d755;
+    margin-left: 6px;
+    padding: 1px;
+    border-radius: 1.1em;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    justify-self: flex-end;
+}
