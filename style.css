@@ -17,13 +17,16 @@
     }
 }
 body {
-    height: 100%;
     margin: 0;
     display: grid;
     font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Lucida Grande',Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
     line-height: 21px;
     letter-spacing: -0.4px;
     color: rgba(48, 48, 48, 0.96);
+}
+#side {
+    position: relative;
+    height: 100vh;
 }
 p {
     margin: 0;
@@ -107,7 +110,10 @@ header > svg:nth-child(4) {
     color: #919191;
 }
 #conversations {
-    border-right: 1px solid #f2f2f2;
+    position: absolute;
+    top: 198px;
+    bottom: 0;
+    overflow-y: scroll;
 }
 #conversation {
     width: 100%;
