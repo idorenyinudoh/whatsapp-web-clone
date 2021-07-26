@@ -131,20 +131,19 @@ header > svg:nth-child(4) {
 }
 #name {
     font-size: 17px;
-    font-weight: 500;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 #time {
     width: max-content;
+    font-weight: 400;
     margin: 3px 0 0 6px;
     font-size: 12px;
     line-height: 14px;
 }
 #yarns {
     font-size: 14px;
-    font-weight: 500;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -161,4 +160,13 @@ header > svg:nth-child(4) {
     font-weight: 600;
     color: #fff;
     justify-self: flex-end;
+}
+.unread {
+    font-weight: 500;
+}
+.read {
+    font-weight: 400;
+}
+.read #yarns {
+    grid-column: 1 / 3;
 }
