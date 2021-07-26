@@ -65,3 +65,27 @@ header > svg:nth-child(4) {
 .material-icons {
     font-size: 18px !important;
 }
+#search {
+    position: relative;
+    height: 49px;
+    background: #f6f6f6;
+}
+#input {
+    position: absolute;
+    left: 5%;
+    top: 7px;
+    width: 90%;
+    height: 35px;
+    background: #fff;
+    border-radius: 30px;
+}
+#input > svg {
+    position: absolute;
+    top: 5.5px;
+    left: 10px;
+}
+#input > p {
+    font-size: 14px;
+    margin: 7px auto 7px 65px;
+    color: #919191;
+}
