@@ -107,7 +107,7 @@ header > svg:nth-child(4) {
     color: #919191;
 }
 #conversations {
-    /* position: fixed; */
+    border-right: 1px solid #f2f2f2;
 }
 #conversation {
     width: 100%;
