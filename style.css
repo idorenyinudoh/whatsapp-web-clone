@@ -114,6 +114,10 @@ header > svg:nth-child(4) {
     grid-template-columns: max-content 1fr;
     grid-template-rows: 72px;
     align-items: center;
+    cursor: pointer;
+}
+#conversation:hover {
+    background: #f5f5f5;
 }
 #conversation > svg {
     margin: 0 15px 0 13px;
