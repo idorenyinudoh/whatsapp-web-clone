@@ -12,7 +12,7 @@ conversations.forEach(element => {
         }
 
         // set background color of chat section with rgba() format
-        
+        chatSection.style.backgroundColor = `rgba(${getRandomNumber()},${getRandomNumber()},${getRandomNumber()},0.5)`
 
         // change unread conversations to read
         if(textElement.classList.contains('unread')) {
